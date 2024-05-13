@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Fast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="title">
+            <h4>Time: <span id="titleTimes">60</span></h4>
+            <h4>Level: <span id="titleLevels">Easy</span></h4>
+        </div>
+        <div id="mirror" class="mirror"></div>
+        <hr>
+        <input id="writeGameInp" placeholder="write the words here" type="text">
+        <div class="btn">
+            <button onclick="playGame()">Play</button>
+            <button onclick="ResumeGame()">Resume</button>
+            <button>Quit</button>
+        </div>
+        <select onchange="selectFn()" class="selectInp" id="selectInp">
+            <option selected value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
